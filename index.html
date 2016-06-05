@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <charset="UTF-8">
+        <title>Articles & Commentaires - Angular JS</title>
+        <link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.min.css">
+    </head>
+    <body ng-app="CommentsApp">
+
+        <div class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Articles & Commentaires - Angular JS</a>
+            </div>
+        </div>
+
+        <div class="container" ng-show="loading">Chargement...</div>
+
+        <!-- Emplacement des vues définies au niveau des routes -->
+        <div class="container" ng-view></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/services/postsfactory.js"></script>
+        <script src="scripts/directives/comment.js"></script>
+        <script src="scripts/directives/tabs.js"></script>
+        <script src="scripts/controllers/postscontroller.js"></script>
+        <script src="scripts/controllers/singlecontroller.js"></script>
+    </body>
+</html>
